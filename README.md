@@ -13,4 +13,4 @@ A recommendation engine for Twitch
 
 * Deployed the service to AWS EC2 for better stability.
 
-> Ip address of demo: http://3.22.234.83/
+> URL of demo: http://3.22.234.83/
