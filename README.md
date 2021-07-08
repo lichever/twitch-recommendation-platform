@@ -20,7 +20,7 @@ A recommendation engine for Twitch
 
 Apache JMeter is used to conduct a load testing on this project.
 
-![image_without_connection_pool](/Users/shawnzhang/Library/Application Support/typora-user-images/image-20210708004453595.png  "result with no connection pool")
+![image_without_connection_pool](https://cdn.jsdelivr.net/gh/lichever/pictureBedForNormalUse@main/uPic/image-20210708004453595_2021_07_08_17_29_19.png  "result with no connection pool")
 
 
 
