@@ -7,7 +7,7 @@ import java.sql.Statement;
 public class MySQLTableCreator {
 
 
-    //初始化db  独立的一个程序 相当于一个helper function
+    //  初始化db    独立的一个程序 相当于一个helper function
 
     // Run this as a Java application to reset the database.
     public static void main(String[] args) {

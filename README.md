@@ -14,3 +14,17 @@ A recommendation engine for Twitch
 * Deployed the service to AWS EC2 for better stability.
 
 > URL of demo: http://3.22.234.83/
+
+--- 
+#### Load testing:
+
+Apache JMeter is used to conduct a load testing on this project.
+
+![image_without_connection_pool](/Users/shawnzhang/Library/Application Support/typora-user-images/image-20210708004453595.png  "result with no connection pool")
+
+
+
+The bottleneck is the connection to the database, and thus, the MySQL JDBC connection pool is used to improve the performance of this project. As can be seen, the throughput has a huge increase by using the connection pool.
+
+![image_with_connection pool](https://cdn.jsdelivr.net/gh/lichever/pictureBedForNormalUse@main/uPic/image-20210708141911048_2021_07_08_14_19_13.png "result with connection pool")
+

@@ -4,6 +4,9 @@ import com.laioffer.jupiter.entity.Item;
 import com.laioffer.jupiter.entity.ItemType;
 import com.laioffer.jupiter.entity.User;
 
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
 import java.sql.*;
 import java.util.*;
 
@@ -15,8 +18,17 @@ public class MySQLConnection implements AutoCloseable{//使用try with：注意�
     // MySQLConnection constructor
     public MySQLConnection() throws MySQLException {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver").getDeclaredConstructor().newInstance();
-            conn = DriverManager.getConnection(MySQLDBUtil.getMySQLAddress());
+
+//            这是普通方式
+//            Class.forName("com.mysql.cj.jdbc.Driver").getDeclaredConstructor().newInstance();
+//            conn = DriverManager.getConnection(MySQLDBUtil.getMySQLAddress());
+
+//            换成connection pool
+            Context context = new InitialContext();
+            DataSource datasource = (DataSource) context.lookup("java:comp/env/jdbc/jupiterDB");
+            conn = datasource.getConnection();
+
+
         } catch (Exception e) {
             e.printStackTrace();
             throw new MySQLException("Failed to connect to Database");

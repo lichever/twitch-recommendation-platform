@@ -36,6 +36,8 @@ public class FavoriteServlet extends HttpServlet {
         }
         String userId = (String) session.getAttribute("user_id");
 
+        //for load test
+//        String userId = request.getParameter("user_id");
 
         try (MySQLConnection conn = new MySQLConnection()) {
             Map<String, List<Item>> itemMap = conn.getFavoriteItems(userId);
