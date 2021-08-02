@@ -28,3 +28,22 @@ The bottleneck is the connection to the database, and thus, the MySQL JDBC conne
 
 ![image_with_connection pool](https://cdn.jsdelivr.net/gh/lichever/pictureBedForNormalUse@main/uPic/image-20210708141911048_2021_07_08_14_19_13.png "result with connection pool")
 
+--- 
+#### Demo1: register
+<img src="https://github.com/lichever/pictureBedForNormalUse/blob/main/gif/demo1_register.gif" width=650 height=360 />
+
+#### Demo2: log in
+<img src="https://github.com/lichever/pictureBedForNormalUse/blob/main/gif/demo2_login_popular.gif" width=650 height=360 />
+
+#### Demo3: get popular games
+<img src="https://github.com/lichever/pictureBedForNormalUse/blob/main/gif/demo3_popular.gif" width=650 height=360 />
+
+#### Demo4: custom search
+<img src="https://github.com/lichever/pictureBedForNormalUse/blob/main/gif/demo4_search.gif" width=650 height=360 />
+
+#### Demo5: my favorite
+<img src="https://github.com/lichever/pictureBedForNormalUse/blob/main/gif/demo5_fav.gif" width=650 height=360 />
+
+#### Demo6: recommendation according to users' favorite records
+<img src="https://github.com/lichever/pictureBedForNormalUse/blob/main/gif/demo6_recom.gif" width=650 height=360 />
+
