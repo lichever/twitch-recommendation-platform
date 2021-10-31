@@ -13,8 +13,6 @@ A recommendation engine for Twitch
 
 * Deployed the service to AWS EC2 for better stability.
 
-> URL of demo: http://3.22.234.83/
-
 --- 
 #### Load testing:
 
